@@ -152,10 +152,12 @@ For Each ws In Worksheets
  greatest_percent_increase = temp_greatest_increase
  ws.Range("Q2").Value = greatest_percent_increase_ticker
  ws.Range("R2").Value = greatest_percent_increase
+ ws.Range("R2").NumberFormat = "0.00%"
  
  greatest_percent_decrease = temp_greatest_decrease
  ws.Range("Q3").Value = greatest_percent_decrease_ticker
  ws.Range("R3").Value = greatest_percent_decrease
+ ws.Range("R3").NumberFormat = "0.00%"
  
  
  greatest_Total_volume = temp_total_volume
